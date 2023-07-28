@@ -4,9 +4,8 @@ public class App {
         course.setName("como fazer pipoca");
         course.setClassTime("1 dia");
 
-        User user = new User();
+        User user = new User(course);
         user.setName("Leonardo");
-        user.setCourse(course);
         user.setEmail("leon@gmail.com");
         user.setPayment("yearly");
 

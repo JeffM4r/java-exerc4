@@ -4,6 +4,10 @@ public class User {
   private Course course;
   private Payment paymentType = new Payment();
 
+  User(Course course){
+    this.course = course;
+  }
+
   String getEmail() {
     return this.email;
   };
@@ -14,10 +18,6 @@ public class User {
 
   Course getCourse() {
     return this.course;
-  };
-
-  void setCourse(Course course) {
-    this.course = course;
   };
 
   String getName() {
