@@ -1,7 +1,7 @@
 public class User {
-  String name;
+  private String name;
   private String email;
-  Course course = new Course();
+  private Course course;
   private Payment paymentType = new Payment();
 
   String getEmail() {
@@ -10,7 +10,23 @@ public class User {
 
   void setEmail(String email) {
     this.email = email;
-  }
+  };
+
+  Course getCourse() {
+    return this.course;
+  };
+
+  void setCourse(Course course) {
+    this.course = course;
+  };
+
+  String getName() {
+    return this.name;
+  };
+
+  void setName(String name) {
+    this.name = name;
+  };
 
   Payment getPayment() {
     return this.paymentType;
